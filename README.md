@@ -37,6 +37,6 @@ bash setup.sh
 
 >> you can run reset to delete all plumbed objects
 
-    ```sh 
+    ``sh 
     bash setup.sh reset
-    ``` 
+    ``
