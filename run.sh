@@ -39,7 +39,6 @@ function dug
 	for i in joe ken bob eric john adam 
 	do
 		userdel -r ${i}
-		groupdel ${i} 
 	done
 	groupdel salesg
 	groupdel accg 
