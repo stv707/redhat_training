@@ -17,7 +17,8 @@ bash setup.sh
 ### Note
 * the script will create 6 users with 2 groups and directories set
 * users:group 
-|user|group| dir |
+
+| user | group | dir |
 |---|---|---|
-|joe bob ken | salesg | /sales-d |
-|eric john adam | accg | /acc-d | 
+| joe bob ken | salesg | /sales-d |
+| eric john adam | accg | /acc-d | 
