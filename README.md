@@ -34,9 +34,9 @@
 
 
 
-
 >> you can run reset to delete all plumbed objects
 
 ```sh 
-    bash setup.sh reset
+    [student@workstation ~]$ cd ~/rh124_x
+    [student@workstation rh124_x]$ bash setup.sh reset
 ```
