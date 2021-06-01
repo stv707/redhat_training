@@ -1,6 +1,6 @@
 # rh124_x
 * Extra Practice for RH124 Training - RHEL 8.2 Admin I
->> Only can use on RH124 Lab Systems!
+  >> All the script here can be only used on Redhat RH124 Lab Systems!
 
 ### Instruction 
 
@@ -18,7 +18,7 @@ bash setup.sh
 
 ### Note
 * the script will create 6 users with 2 groups and directories set in  servera
-* users:group 
+* default user  password : **redhat**
 
 | user | group | dir |
 |---|---|---|
