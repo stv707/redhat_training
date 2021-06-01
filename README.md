@@ -39,4 +39,4 @@ bash setup.sh
 
 ```sh 
     bash setup.sh reset
-``
+```
