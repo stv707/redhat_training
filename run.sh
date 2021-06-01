@@ -11,25 +11,27 @@ function cug
 	fi 
 groupadd salesg
 groupadd accg 
-
 for i in joe ken bob 
 do
-	useradd -c "Sales User - ${i}" -g salesg ${i} 
-	echo redhat | passwd --stdin ${i} 
+	useradd -c "Sales User - ${i}" ${i} 
+	echo redhat | passwd --stdin ${i} &> /dev/null
+	usermod -aG salesg ${i} 
 done
 
 
 for i in eric john adam
 do
-	useradd -c "Acc user - ${i}" -g accg ${i} 
-	echo redhat | passwd --stdin ${i} 
+	useradd -c "Acc user - ${i}" ${i} 
+	echo redhat | passwd --stdin ${i} &> /dev/null
+	usermod -aG accg ${i} 
 done 
 
 mkdir  /sales-d   /acc-d  
-chown root:salesg /sales-d 
-chown root:accg  /acc-d 
 
-chmod 770  /*-d
+#chown root:salesg /sales-d 
+#chown root:accg  /acc-d 
+
+chmod 777 /*-d
 } 
 
 function dug
@@ -37,6 +39,7 @@ function dug
 	for i in joe ken bob eric john adam 
 	do
 		userdel -r ${i}
+		groupdel ${i} 
 	done
 	groupdel salesg
 	groupdel accg 
