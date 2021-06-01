@@ -1,21 +1,23 @@
 # rh124_x
-Extra Practice for RH124 Training - RHEL 8.2 Admin I
+* Extra Practice for RH124 Training - RHEL 8.2 Admin I
+>> Only can use on RH124 Lab Systems!
 
 ### Instruction 
 
-* clone this repo
+1. clone this repo
 ```sh 
+cd ~
 git clone https://github.com/stv707/rh124_x.git
 ```
 
-* cd into ./rh124_x and run setup.sh 
+2. cd into ./rh124_x and run setup.sh 
 ```sh 
 cd ./rh124_x
 bash setup.sh 
 ```
 
 ### Note
-* the script will create 6 users with 2 groups and directories set
+* the script will create 6 users with 2 groups and directories set in  servera
 * users:group 
 
 | user | group | dir |
