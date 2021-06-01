@@ -6,14 +6,14 @@
 
 1. clone this repo
 ```sh 
-cd ~
-git clone https://github.com/stv707/rh124_x.git
+[student@workstation ~]$ cd ~
+[student@workstation ~]$ git clone https://github.com/stv707/rh124_x.git
 ```
 
 2. cd into ./rh124_x and run setup.sh 
 ```sh 
-cd ./rh124_x
-bash setup.sh 
+[student@workstation ~]$ cd ./rh124_x
+[student@workstation rh124_x]$ bash setup.sh 
 ```
 
 ### Note
