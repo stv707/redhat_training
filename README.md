@@ -25,8 +25,17 @@ bash setup.sh
 | joe bob ken | salesg | /sales-d |
 | eric john adam | accg | /acc-d | 
 
+* Your challenge is, as Admin 
+    1. use permission to make sure only member of **salesg** should able to access dir **/sales-d** 
+    1. use permission to make sure only member of **accg** should able to access dir **/acc-d**
+    1. use sticky bit to make sure files/data created can only be deleted by the file/data creator(owner)
+    1. use setgid to make sure files/data created in sales-s/acc-d are editable within the members
 
-* you can run reset to delete all plumbed objects
-```sh 
-bash setup.sh reset
-``` 
+
+
+
+
+>> you can run reset to delete all plumbed objects
+    ```sh 
+    bash setup.sh reset
+    ``` 
