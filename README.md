@@ -24,3 +24,9 @@ bash setup.sh
 |---|---|---|
 | joe bob ken | salesg | /sales-d |
 | eric john adam | accg | /acc-d | 
+
+
+* you can run reset to delete all plumbed objects
+```sh 
+bash setup.sh reset
+``` 
