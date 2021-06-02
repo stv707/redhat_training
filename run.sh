@@ -1,4 +1,5 @@
 #!/bin/bash 
+#UP
 ARG=$1
 
 function cug

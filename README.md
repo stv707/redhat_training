@@ -1,6 +1,6 @@
 # rh124_x
 * Extra Practice for RH124 Training - RHEL 8.2 Admin I
-  >> All the script here can be only used on Redhat RH124 Lab Systems!
+  >> To run on Redhat RH124 Lab Systems!
 
 ### Instruction 
 
