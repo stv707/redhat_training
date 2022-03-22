@@ -1,4 +1,4 @@
-# rh124_Selinux
+# rh134_Selinux
 * Extra Practice for RH134 Training - RHEL 8.2 Admin II
   >> To run on Redhat RH134 Lab Systems!
 
