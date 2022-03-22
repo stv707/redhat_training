@@ -2,7 +2,7 @@
 * Extra Practice for RH124 Training - RHEL 8.2 Admin I
   >> To run on Redhat RH124 Lab Systems!
 
-### Instruction 
+### Instruction SET
 
 1. clone this repo
 ```sh 
