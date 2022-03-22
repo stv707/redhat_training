@@ -46,7 +46,7 @@ vim /usr/lib/systemd/system/httpd.service
 vim /usr/lib/systemd/system/php-fpm.service
 #PrivateTmp=true
 
-systemd daemon-reload 
+systemctl daemon-reload 
 systemctl enable --now httpd
 ```
 
