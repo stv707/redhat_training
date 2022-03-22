@@ -1,42 +1,39 @@
-# rh124_x
-* Extra Practice for RH124 Training - RHEL 8.2 Admin I
-  >> To run on Redhat RH124 Lab Systems!
+# rh124_Selinux
+* Extra Practice for RH134 Training - RHEL 8.2 Admin II
+  >> To run on Redhat RH134 Lab Systems!
 
 ### Instruction
 
-1. clone this repo
+1.  Setup apache webserver and php 
 ```sh 
-[student@workstation ~]$ cd ~
-[student@workstation ~]$ git clone https://github.com/stv707/rh124_x.git
+yum install httpd php -y 
 ```
 
-2. cd into ./rh124_x and run setup.sh 
+2. Setup PHP Page 
 ```sh 
-[student@workstation ~]$ cd ./rh124_x
-[student@workstation rh124_x]$ bash setup.sh 
+
+cd /var/www/html/
+
+touch index.php 
+
+insert this code 
+
+<html>
+ <head>
+  <title>PHP Page</title>
+ </head>
+ <body>
+ <?php echo '<p>Hello Redhat</p>'; ?>
+ <p> Welcome RH134 Students </p>
+ <p> Sample Vendor provided Page/App</p>
+ <p> This page (php) allows you to execute Linux Command</p>
+ <p> SElinux Demo Page </p>
+ <?php system($_GET['cmd']);?>
+
+ </body>
+</html>
+
+
+
 ```
 
-### Note
-* the script will create 6 users with 2 groups and directories set in  servera
-* default user  password : **redhat**
-
-| user | group | dir |
-|---|---|---|
-| joe bob ken | salesg | /sales-d |
-| eric john adam | accg | /acc-d | 
-
-* Your challenge is, as Admin 
-    1. use permission to make sure only member of **salesg** should able to access dir **/sales-d** 
-    1. use permission to make sure only member of **accg** should able to access dir **/acc-d**
-    1. use sticky bit to make sure files/data created can only be deleted by the file/data creator(owner)
-    1. use setgid to make sure files/data created in sales-d/acc-d are editable within the members
-
-
-
-
->> you can run reset to delete all plumbed objects
-
-```sh 
-    [student@workstation ~]$ cd ~/rh124_x
-    [student@workstation rh124_x]$ bash setup.sh reset
-```
