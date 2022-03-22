@@ -120,7 +120,7 @@ sh-4.4$
 
 5. If Step 4 done, you now have a reverse shell (hacked shell) to servera from workstation 
 run the following command to create a exploit file and run the exploit 
->> the exploit file is just an shell script, in real life, an attacker could run a real exploit !!
+>> the exploit file is just a shell script, in real life, an attacker could run a real exploit !!
 ```sh
 sh-4.4$ cd /tmp
 
