@@ -26,7 +26,7 @@ insert this code into index.php
   <title>PHP Page</title>
  </head>
  <body>
- <?php echo '<p>Hello Redhat</p>'; ?>
+ <?php echo '<p>Hello Redhatters RH134</p>'; ?>
  <p> Welcome RH134 Students </p>
  <p> Sample Vendor provided Page/App</p>
  <p> This page (php) allows you to execute Linux Command</p>
